@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+.mainDiv{
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+.centerDiv{
+    height: 200px;
+    width: 350px;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(23, 21, 21);
+    border-radius: 20px;
+    z-index: 0;
+    /* position: absolute; */
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 7px chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerDiv:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 15px  rgb(180, 255, 5);
+}
+.topright{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 4px;
+    height: 20%;
+    width: 37%;
+    top: 5%;
+    right: 0%;
+    z-index: 2;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.topright > p > span{
+    color: rgb(0, 175, 244);
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 175, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inner{
+    margin-top: 7px;
+    height: 7px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: black;
+}
+.bar{
+    height: 50%;
+    width: 2.5px;
+    background-color: black;
+    margin-right: 0.5px;
+}
+.rightbottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    height: 20%;
+    width: 37%;
+    bottom: 5%;
+    right: -5%;
+    z-index: 2;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.one{
+    font-size: 30px;
+    font-style: italic;
+}
+.two{
+    position: relative;
+    font-size: 10px;
+    left: 7%;
+}
+.bottomleft{
+    position: absolute;
+    left: 2%;
+    bottom: 0%;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.cardnumber{
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 30px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    letter-spacing: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.valid{
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 90px;
+    width: 90px;
+    position: relative;
+    top:38%;
+    left: 30%;
+}
+.date{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -1px;
+    position: relative;
+    top: 21%;
+    left: 16%;
+}
+.topleft{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: -40%;
+    left: -50%;
+    font-size: 12px;
+}
+.chip{
+    height: 40px;
+    width: 60px;
+    background-color: goldenrod;
+    top: -21%;
+    left: -63%;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.ctop,.cmid,.cbottom{
+    height: 33%;
+    width: 100%;
+    display: flex;
+}
+.ct1{
+    height: 100%;
+    width: 45%;
+    border-bottom: 2px solid black; 
+    border-right: 3px solid black;
+    border-top-right-radius: 20px;
+}
+.ct2{
+    height: 100%;
+    width: 10%;
+}
+.ct3{
+    height: 100%;
+    width: 45%;
+    border-bottom: 2px solid black; 
+    border-left: 3px solid black;
+    border-top-left-radius: 20px;
+}
+.cm1 , .cm2 , .cm3{
+    height: 100%;
+    width: 30%;
+}
+.cm1 , .cm3{
+    width: 35%;
+}
+.cm1{
+    border-right: 2px solid black;
+}
+.cm3{
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+.cbottom{
+    display: flex;
+    height: 34%;
+    border-top: 2px solid black;
+}
+.cb1{
+    height: 100%;
+    width: 50%;
+    float: left;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 20px 0;
+
+}
+.cb2{
+    height: 100%;
+    width: 50%;
+    float: right;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 0 20px;
+}
